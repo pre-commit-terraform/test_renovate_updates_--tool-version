@@ -9,6 +9,6 @@ hooks = [
   {
     id = "terraform_fmt",
     # renovate: datasource=github-releases depName=hashicorp/terraform
-    args = ["--hook-config=--tool-version=1.5.7"]
+    args = ["--hook-config=--tool-version=1.16.0"]
   }
 ]
