@@ -1,0 +1,13 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: ["local>SpotOnInc/renovate-config"],
+  customManagers: [
+    {
+      customType: "regex",
+      managerFilePatterns: ["/\\.pre-commit-config\\.ya?ml$/"],
+      matchStrings: [
+        "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)\\s+-\\s+--hook-config=--tool-version=(?<currentValue>\\S+)",
+      ],
+    },
+  ],
+}
