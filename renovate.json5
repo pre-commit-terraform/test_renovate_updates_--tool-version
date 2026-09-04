@@ -1,8 +1,6 @@
 {
-  $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  extends: ["local>SpotOnInc/renovate-config"],
   customManagers: [
-    {
+    { // Enable https://gihub.com/antonbabenko/pre-commit-terraform tool updates
       customType: "regex",
       managerFilePatterns: ["/\\.pre-commit-config\\.ya?ml$|prek\\.toml$/"],
       matchStrings: [
